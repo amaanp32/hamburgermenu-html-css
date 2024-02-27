@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main_box {
+  background-image: url(./photo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+.btn_one i {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  line-height: 60px;
+  position: absolute;
+  left: 16px;
+  cursor: pointer;
+}
+.btn_two i {
+  font-size: 30px;
+  color: grey;
+  font-weight: 700;
+  line-height: 60px;
+  position: absolute;
+  left: 256px;
+  cursor: pointer;
+}
+.sidebar_menu .logo {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  box-shadow:0 2px 6px rgba(255, 255, 255, 0.1);
+}
+.sidebar_menu .logo a {
+  font-size: 20px;
+  position: absolute;
+  left: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+.sidebar_menu .menu {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+.sidebar_menu .menu li,
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.sidebar_menu .menu i {
+  padding-right: 8px;
+}
+.sidebar_menu .social_media {
+  position: absolute;
+  bottom: 50px;
+  left: 25%;
+}
+.sidebar_menu .social_media i {
+  color: white;
+  opacity: 0.5;
+  padding: 0 5px;
+}
+#check {
+  display: none;
+}
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+.btn_one i:hover{
+    font-size: 35px;
+    transition: all 0.2s linear;
+}
+.btn_two i:hover{
+    font-size: 35px;
+    transition: all 0.2s linear;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+    transition: all 0.2s linear;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+} 
+#check:checked ~ footer{
+    opacity: 0;
+    
+}
+footer{
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
